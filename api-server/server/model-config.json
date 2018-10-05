@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "sqliteDS"
+  },
+  "AccessToken": {
+    "dataSource": "sqliteDS",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "sqliteDS",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "sqliteDS",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "sqliteDS",
+    "public": false
+  },
+  "Note": {
+    "dataSource": "sqliteDS"
+  },
+  "Comment": {
+    "dataSource": "sqliteDS",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "sqliteDS",
+    "public": true
+  }
+}
