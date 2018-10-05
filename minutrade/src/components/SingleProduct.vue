@@ -59,7 +59,7 @@
           <h3>Conheça as nossas lojas</h3>
           <br />
           <ul>
-            <li v-for="store in stores">
+            <li v-for="store in stores" :key="store.id">
               <p>{{ store.store }}, {{ store.address }}</p>
             </li>
           </ul>
@@ -87,7 +87,7 @@
         <div class="comment-list">
         <span v-show="loading" class="spinner"></span>
           <div>
-              <comment v-for="comment in comments" :comment="comment"></comment>
+              <comment v-for="comment in comments" :key="comment.id" :comment="comment"></comment>
           </div>
         </div>
 

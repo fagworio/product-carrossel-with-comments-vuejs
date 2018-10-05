@@ -8,7 +8,7 @@
         
         <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
           
-          <div class="card-carousel--card" v-for="item in items"  @click="setProductItem(item), setRatingItem(item)">
+          <div class="card-carousel--card"  v-for="item in items" :key="item.id" @click="setProductItem(item), setRatingItem(item)">
             <router-link to="/single-product">
                 <img class="product-image" :src="item.image_url"/>
             </router-link>
