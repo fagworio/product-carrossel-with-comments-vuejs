@@ -1,7 +1,7 @@
 # minutrade
 > Api Server
 
-#Browse to api-server
+# Browse to api-server
 ``` bash
 # install dependencies
 npm install
@@ -16,7 +16,7 @@ For a detailed explanation on how things work, check out the [guide](https://git
 
 > Front-end project
 
-#Browse to api-server
+# Browse to minutrade
 
 ## Build Setup
 
